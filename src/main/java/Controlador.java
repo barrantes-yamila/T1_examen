@@ -12,9 +12,9 @@ import java.util.ArrayList;
  */
 public class Controlador {
     public class AlumnoControlador {
-    private ArrayList<Alumno> listaAlumnos = new ArrayList<>();
+    private ArrayList<alumno> listaAlumnos = new ArrayList<>();
 
-    public boolean agregarAlumno(Alumno nuevoAlumno) {
+    public boolean agregarAlumno(alumno nuevoAlumno) {
         if (nuevoAlumno == null) {
             System.out.println("Error: el alumno no puede ser nulo.");
             return false;
@@ -34,15 +34,15 @@ public class Controlador {
             System.out.println("No hay alumnos registrados.");
             return;
         }
-        for (Alumno a : listaAlumnos) {
+        for (alumno a : listaAlumnos) {
             a.verDatos();
             System.out.println("---------------------------------------------");
         }
         System.out.println("Total de alumnos: " + listaAlumnos.size());
     }
 
-    public Alumno buscarPorDocumento(String numeroDocumento) {
-        for (Alumno a : listaAlumnos) {
+    public alumno buscarPorDocumento(String numeroDocumento) {
+        for (alumno a : listaAlumnos) {
             if (a.getNumeroDocumento().equals(numeroDocumento)) {
                 return a;
             }
@@ -51,7 +51,7 @@ public class Controlador {
     }
 
     public boolean eliminarAlumno(String numeroDocumento) {
-        Alumno encontrado = buscarPorDocumento(numeroDocumento);
+        alumno encontrado = buscarPorDocumento(numeroDocumento);
         if (encontrado == null) {
             System.out.println("Error: no se encontró alumno con documento " + numeroDocumento);
             return false;

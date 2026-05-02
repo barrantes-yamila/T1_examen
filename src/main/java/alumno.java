@@ -8,6 +8,14 @@
  * @author Yamila
  */
 public class alumno {
+
+    String getNumeroDocumento() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void verDatos() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
  public class Alumno {
     private String nombre;
     private final String tipoDocumento;
