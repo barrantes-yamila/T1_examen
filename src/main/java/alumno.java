@@ -10,7 +10,7 @@
 public class alumno {
  public class Alumno {
     private String nombre;
-    private String tipoDocumento;
+    private final String tipoDocumento;
     private String numeroDocumento;
     private char nivelSocioeconomico;
     private String tipoBeca;
@@ -68,12 +68,19 @@ public class alumno {
 
     private float asignarPensionBase(char nivel) {
         switch (nivel) {
-            case 'A': return 500.0f;
-            case 'B': return 350.0f;
-            case 'C': return 200.0f;
-            default:
+            case 'A' -> {
+                return 500.0f;
+            }
+            case 'B' -> {
+                return 350.0f;
+            }
+            case 'C' -> {
+                return 200.0f;
+            }
+            default -> {
                 System.out.println("Nivel invalido, se asigna pension base 0.");
                 return 0.0f;
+            }
         }
     }
 
