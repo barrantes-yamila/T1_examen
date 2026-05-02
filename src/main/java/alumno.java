@@ -16,6 +16,10 @@ public class alumno {
     void verDatos() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
+    void setPorcentajeBeca(String tipoBeca, float porcentaje) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
  public class Alumno {
     private String nombre;
     private final String tipoDocumento;
@@ -30,7 +34,7 @@ public class alumno {
         this.nombre = nombre;
         this.tipoDocumento = tipoDocumento;
         this.nivelSocioeconomico = nivelSocioeconomico;
-        this.setNumeroDocumento(tipoDocumento, numeroDocumento);
+        this.setumeroDocumento(tipoDocumento, numeroDocumento);
         this.pensionBase = asignarPensionBase(nivelSocioeconomico);
     }
 
@@ -109,6 +113,10 @@ public class alumno {
         System.out.println("Pension base      : S/ " + this.pensionBase);
         System.out.println("Pension final     : S/ " + this.calcularPensionFinal());
     }
-}
+
+        private void setumeroDocumento(String tipoDocumento, String numeroDocumento) {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+    }
     
 }
